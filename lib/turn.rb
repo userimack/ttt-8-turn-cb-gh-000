@@ -18,3 +18,13 @@ def position_taken?(board, index)
   end 
 end
 
+def move(board, index, character)
+  board[index] = character
+end 
+
+def input_to_index(index)
+  index - 1 
+end 
+
+
+  
