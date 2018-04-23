@@ -27,7 +27,7 @@ def move(board, index, character)
 end 
 
 def input_to_index(index)
-  index - 1 
+  index.to_i - 1 
 end 
 
 
