@@ -32,6 +32,9 @@ def turn(board)
   index = input_to_index(gets.strip)
   if valid_move?(index)
     move(board, index)
+  else 
+    puts "Invalid move!! Enter again!!"
+    turn(board)
 end
 
 def input_to_index(index)
