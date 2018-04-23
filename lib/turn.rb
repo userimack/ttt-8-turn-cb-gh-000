@@ -22,9 +22,17 @@ def position_taken?(board, index)
   end 
 end
 
-def move(board, index, character)
+def move(board, index, character="X")
   board[index] = character
 end 
+
+def turn(board)
+  puts "Please enter 1-9:"
+  
+  index = input_to_index(gets.strip)
+  if valid_move?(index)
+    move(board, index)
+end
 
 def input_to_index(index)
   index.to_i - 1 
