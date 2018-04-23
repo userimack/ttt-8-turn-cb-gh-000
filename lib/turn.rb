@@ -35,6 +35,7 @@ def turn(board)
   else 
     puts "Invalid move!! Enter again!!"
     turn(board)
+  end 
 end
 
 def input_to_index(index)
